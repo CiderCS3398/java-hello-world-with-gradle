@@ -1,4 +1,5 @@
 language: java
+script ./gradlew build
 gradle check
 gradle assemble
 before_cache:
