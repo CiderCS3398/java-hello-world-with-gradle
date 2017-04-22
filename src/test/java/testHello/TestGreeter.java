@@ -38,4 +38,12 @@ public class TestGreeter {
       assertEquals(g.getName()," ");
       assertEquals(g.sayHello(),"Hello  !");
    }
+
+   @Test
+   public void newTestSTGreeterFail() 
+   {
+      g.setName(" ");
+      assertEquals(g.getName()," ");
+      assertEquals(g.sayHello(),"Hello!");
+   }
 }
