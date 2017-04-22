@@ -42,8 +42,8 @@ public class TestGreeter {
    @Test
    public void newtestCSGreeterFail()
    {
-      g.setName("I AM NOT GOOD WITH COMPUTER");
-      assertEquals(g.getName(), "Christian");
-      assertEquals(g.sayHello(), "Hello Christian!");
+      g.setName("Christian Sylvester");
+      assertEquals(g.getName(), "Christian Sylvester");
+      assertEquals(g.sayHello(), "Hello Christian Sylvester!");
    }
 }
