@@ -38,4 +38,12 @@ public class TestGreeter {
       assertEquals(g.getName(),"Tx State");
       assertEquals(g.sayHello(),"Hello Tx State!");
    }
+
+   @Test
+   public void newTestZsmGreeterFail()
+   {
+      g.setName("Tx State");
+      assertEquals(g.getName(),"Wrench in the Works");
+      assertEquals(g.sayHello(),"Hello Tx State!");
+   }
 }
