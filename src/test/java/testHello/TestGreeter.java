@@ -34,11 +34,20 @@ public class TestGreeter {
    }
 
    @Test
-   public void newestNAGreeterTest(){
+   public void newestNAGreeterPass(){
       g.setName("Nick");
       nick.setName(g.getName());
 
       assertEquals(g.getName(), nick.getName());
       assertEquals(g.sayHello(), "Hello Nick!");
+   }
+
+   @Test
+   public void newestNAGreeterFail(){
+      g.setName("Nick");
+      nick.setName("Nicholas");
+
+      assertEquals(g.getName(), nick.getName());
+      assertEquals(g.sayHello(), "Hello Nicholas!");
    }
 }
