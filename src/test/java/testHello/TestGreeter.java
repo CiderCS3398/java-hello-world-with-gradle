@@ -36,4 +36,12 @@ public class TestGreeter {
    {
      assertNotNull(g);
    }
+
+   @Test
+   public void newest_FS_GreeterFail() //throws AssertionError
+   {
+     g.setName("Dr. Lehr");
+     assertTrue("The name set for the Greeter object should be World.",
+                g.getName().equals("World"));
+   }
 }
