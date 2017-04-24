@@ -32,7 +32,7 @@ public class TestGreeter {
    }
    
    @Test
-   public void testGreeterNot()
+   public void newestEJDGreeterPass()
    {
       g.setName("Yo Dawg");
 	  assertNotSame(g.getName(),"Yeah Dawg");
