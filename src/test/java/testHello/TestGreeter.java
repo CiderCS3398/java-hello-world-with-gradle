@@ -37,4 +37,11 @@ public class TestGreeter {
       g.setName("Yo Dawg");
 	  assertNotSame(g.getName(),"Yeah Dawg");
    }
+   
+   @Test
+   public void newestEJDGreeterFail()
+   {
+	   g.setName("Wee");
+	   assertNotSame(g.getName(),"Wee");
+   }
 }
