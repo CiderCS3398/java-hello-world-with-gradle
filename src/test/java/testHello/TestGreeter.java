@@ -30,4 +30,11 @@ public class TestGreeter {
       assertEquals(g.getName(),"World");
       assertEquals(g.sayHello(),"Hello World!");
    }
+   
+   @Test
+   public void newestEJDGreeterPass()
+   {
+      g.setName("Yo Dawg");
+	  assertNotSame(g.getName(),"Yeah Dawg");
+   }
 }
